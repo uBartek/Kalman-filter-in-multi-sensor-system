@@ -56,6 +56,9 @@ for n in range(1, numOfSamples):
 
     filterOutput[n] = x
 
+
+''' Visualization '''
+
 plt.plot(timeArray, realSignalInput, color='k', label='real signal')
 plt.plot(timeArray, inputArrSensor1, color='b',
          linestyle='--', label='sensor 1')
@@ -71,5 +74,3 @@ axes = plt.gca()
 axes.set_xlim([0, timeArray[-1]])
 
 plt.show()
-
-''' Visualization '''
